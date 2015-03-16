@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.saad.biblio_fsr" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".data.BibilioProvider"
+            android:authorities="com.example.saad.biblio_fsr"
+            android:exported="false"
+            android:syncable="true" />
+
+        <activity
+            android:name=".Books_Activity"
+            android:label="@string/title_activity_books"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.saad.biblio_fsr.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Selcted_Book_Activity"
+            android:label="@string/title_activity_selcted__book_" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.saad.biblio_fsr.Books_Activity" />
+        </activity>
+        <service android:name=".service.BookService"
+            >
+
+            </service>
+    </application>
+
+</manifest>

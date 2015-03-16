@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Biblio_FSR</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_books">Books</string>
+    <string name="title_activity_selcted__book_">Selcted_Book_Activity</string>
+    <string name="label_title">Title   :</string>
+    <string name="label_author">Author:</string>
+    <string name="label_description">Description :</string>
+</resources>
