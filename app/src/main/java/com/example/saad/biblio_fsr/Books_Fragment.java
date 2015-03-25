@@ -2,11 +2,10 @@ package com.example.saad.biblio_fsr;
 
 
 
-import android.content.Intent;
+
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
@@ -63,7 +62,6 @@ public class Books_Fragment extends Fragment implements LoaderManager.LoaderCall
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Cursor cursor= (Cursor) parent.getItemAtPosition(position);
-                Intent intent=new Intent(getActivity(),Selcted_Book_Activity.class);
                 Uri uri=BiblioContrat.BookEntry.buildBookWith_Id(
                         cursor.getInt(cursor.getColumnIndex(BiblioContrat.BookEntry._ID))
                 );
