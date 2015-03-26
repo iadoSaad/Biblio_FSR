@@ -5,7 +5,6 @@ package com.example.saad.biblio_fsr;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.CursorLoader;
@@ -18,7 +17,7 @@ import android.widget.TextView;
 
 import com.example.saad.biblio_fsr.data.BiblioContrat;
 
-import org.w3c.dom.Text;
+
 
 
 /**
