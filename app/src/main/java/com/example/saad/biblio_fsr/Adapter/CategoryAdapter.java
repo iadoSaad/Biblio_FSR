@@ -26,10 +26,8 @@ public class CategoryAdapter extends CursorAdapter {
         public final ImageView imageView;
 
         ViewHolder(View view){
-            String hello="hihihi";
 
             textView=(TextView) view.findViewById(R.id.book_category_text);
-            textView.setText(hello);
             imageView=(ImageView)view.findViewById(R.id.imageView);
         }
     }
