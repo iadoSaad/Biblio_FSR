@@ -13,7 +13,7 @@ public class MainActivity extends ActionBarActivity implements Home_Fragment.Cal
 
 
     boolean twoPane;
-    String FRAGMENT_BOOKS_TAG="book_tag" ;
+    String FRAGMENT_BOOKS_TAG= "book_tag" ;
 
     public static final String SELECTED_CATEGORY="selected_category";
     @Override
